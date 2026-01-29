@@ -137,6 +137,12 @@ const domains = [
         description: "Personal AI assistant with character and sophistication.",
         tags: ["AI", "Personal", "Assistant"],
         status: "Available"
+    },
+    {
+        name: "bobbiesue.ai",
+        description: "Friendly, approachable AI companion with a warm, Southern charm.",
+        tags: ["AI", "Personal", "Friendly"],
+        status: "Available"
     }
 ];
 
