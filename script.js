@@ -4,145 +4,169 @@ const domains = [
         name: "corrina.ai",
         description: "Personal AI assistant with a friendly, approachable name. Perfect for consumer-facing AI products.",
         tags: ["AI", "Personal", "Assistant"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "dickie.ai",
         description: "Casual, friendly AI companion. Great for personal AI assistants or chatbot services.",
         tags: ["AI", "Personal diarist"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "margaux.ai",
         description: "Sophisticated personal AI with an elegant name. Premium AI assistant branding.",
         tags: ["AI", "Personal", "Premium"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "florid.ai",
         description: "AI for creative writing, content generation, or elaborate language processing.",
         tags: ["AI", "Creative", "Writing", "Muse"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "razzi.ai",
         description: "Sharp, energetic AI brand. Perfect for fast-paced AI tools and services.",
         tags: ["AI", "Personal", "Dynamic"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "ryes.ai",
         description: "Clever wordplay on 'rise' - AI for growth, optimization, and improvement.",
         tags: ["AI", "Personal", "Dynamic"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "simmerhan.ai",
         description: "Patient, thoughtful AI that takes time to analyze and process complex information.",
         tags: ["AI", "Analysis", "Strategic"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "creampuff.ai",
         description: "Sweet and delightful AI companion with an endearing personality.",
         tags: ["AI", "Desirable", "Easy on the Eyes", "Sales", "Marketing"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "gussie.ai",
         description: "Your AI fashion guru with impeccable style advice and trend insights.",
         tags: ["AI", "Fashion", "Style Guru"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "coretta.ai",
         description: "Elegant AI assistant with a melodious and sophisticated presence.",
         tags: ["AI", "Sweet", "Musical"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "jeanluc.ai",
         description: "Authoritative AI expert with commanding knowledge and leadership qualities.",
         tags: ["AI", "Knowledgeable", "Authoritative", "In Charge"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "billyray.ai",
         description: "Friendly, down-to-earth AI companion who's always there for you.",
         tags: ["AI", "Personable", "Friendly", "Buddy"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "rosemarie.ai",
         description: "Your trusted AI confidant for relationship advice and social guidance.",
         tags: ["AI", "Dating Advice", "Wing Woman"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "strewn.ai",
         description: "AI for organization, pattern recognition, and making sense of scattered data.",
         tags: ["AI", "Data", "Organization"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "superpositioning.ai",
         description: "Quantum-inspired AI for exploring multiple solutions simultaneously.",
         tags: ["AI", "Quantum", "Innovation", "Future of Computing"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "hereshow.ai",
         description: "AI-powered demonstrations, tutorials, and show-and-tell platforms.",
         tags: ["AI", "Demo", "Education", "Explainitory"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "hereis.ai",
         description: "Present and deliver - perfect for AI presentation tools, content delivery, or information services.",
         tags: ["AI", "Presentation", "Content", "Explainitory"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "cutbait.ai",
         description: "AI for decision-making and strategic choices. 'Cut bait or fish' - make the call with AI insights.",
         tags: ["AI", "Business", "Strategy", "Motivation"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "machuniverse.ai",
         description: "Expansive AI ecosystem or multiverse platform. Great for comprehensive AI solutions.",
         tags: ["AI", "Platform", "Enterprise"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "netnav.ai",
         description: "AI-powered web navigation, search, and internet exploration tools.",
         tags: ["AI", "Navigation", "Search", "Web helper"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "quenby.ai",
         description: "Unique personal AI companion with a distinctive, memorable name.",
         tags: ["AI", "Personal", "Unique"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "quentanglement.ai",
         description: "Quantum-inspired AI for complex problem-solving and advanced computational tasks.",
         tags: ["AI", "Science", "Quantum", "Advanced"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "qwendolyn.ai",
         description: "Personal AI assistant with character and sophistication.",
         tags: ["AI", "Personal", "Assistant"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     },
     {
         name: "bobbiesue.ai",
         description: "Friendly, approachable AI companion with a warm, Southern charm.",
         tags: ["AI", "Personal", "Friendly"],
-        status: "Available"
+        status: "Available",
+        price: "Make Offer"
     }
 ];
 
@@ -169,19 +193,21 @@ function renderDomains(domainsToRender) {
 
 // Search functionality
 function setupSearch() {
-    const searchInput = document.getElementById('searchInput');
+    const headerSearch = document.getElementById('headerSearch');
 
-    searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
+    if (headerSearch) {
+        headerSearch.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
 
-        const filteredDomains = domains.filter(domain => {
-            return domain.name.toLowerCase().includes(searchTerm) ||
-                   domain.description.toLowerCase().includes(searchTerm) ||
-                   domain.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+            const filteredDomains = domains.filter(domain => {
+                return domain.name.toLowerCase().includes(searchTerm) ||
+                       domain.description.toLowerCase().includes(searchTerm) ||
+                       domain.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+            });
+
+            renderDomains(filteredDomains);
         });
-
-        renderDomains(filteredDomains);
-    });
+    }
 }
 
 // Contact form handling
