@@ -239,7 +239,8 @@ function setupContactForm() {
             name: document.getElementById('name').value.trim(),
             email: document.getElementById('email').value.trim(),
             domain: document.getElementById('domain').value.trim(),
-            message: document.getElementById('message').value.trim()
+            message: document.getElementById('message').value.trim(),
+            website: document.getElementById('website').value
         };
 
         // Validate form data
