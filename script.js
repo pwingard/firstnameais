@@ -167,6 +167,27 @@ const domains = [
         tags: ["AI", "Personal", "Friendly"],
         status: "Available",
         price: "Make Offer"
+    },
+    {
+        name: "billybob.ai",
+        description: "Down-to-earth AI buddy with a friendly, casual personality.",
+        tags: ["AI", "Personal", "Friendly", "Casual"],
+        status: "Available",
+        price: "Make Offer"
+    },
+    {
+        name: "charleigh.ai",
+        description: "Modern, sophisticated AI companion with a trendy, approachable style.",
+        tags: ["AI", "Personal", "Modern", "Sophisticated"],
+        status: "Available",
+        price: "Make Offer"
+    },
+    {
+        name: "vickie.ai",
+        description: "Classic, friendly AI assistant with a warm and reliable presence.",
+        tags: ["AI", "Personal", "Assistant", "Reliable"],
+        status: "Available",
+        price: "Make Offer"
     }
 ];
 
